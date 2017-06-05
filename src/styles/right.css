@@ -11,64 +11,35 @@
 	margin-bottom: 30px;
 }
 
-.title-desc {
-	font-size: 16px;
-	line-height: 24px;
-	color: $primary;
-
-	@mixin column-s 7;
-
-	@media (--desktopbig) {
-		@mixin column-big 7;
-	}
-
-	@media @media (--mobile) {
-		font-size: 14px;
-		line-height: 18px;
-		width: 100%;
-		color: fade($primary, 60%);
-		margin-top: 20px;
-	}
-}
-
 .tabs {
 	position: relative;
-	color: $linkTabs;
 	width: 100%;
 	display: flex;
-	margin-bottom: 55px;
+	margin-bottom: 45px;
+	user-select: none;
 
 	&__line {
 		height: 1px;
 		width: 100%;
 		bottom: -12px;
 		left: 0;
+		background: rgba(34, 52, 72, .1);
 		position: absolute;
-		background: $lineColor;
 	}
 
 	&__current {
 		height: 3px;
-		width: 90px;
+		width: 163px;
 		bottom: -13px;
 		left: 0;
 		border-radius: 3px;
 		position: absolute;
 		background: $alfared;
+		transition: width $animateout, left $animateout;
 
 		&--2 {
-			width: 163px;
-			left: 110px;
-		}
-
-		&--3 {
-			width: 104px;
-			left: 289px;
-		}
-
-		&--4 {
-			width: 106px;
-			left: 394px;
+			width: 87px;
+			left: 186px;
 		}
 	}
 }
@@ -76,6 +47,7 @@
 .tab {
 	font-size: 18px;
 	transition: opacity $animateout;
+	cursor: pointer;
 
 	a {
 		color: currentColor;
@@ -83,6 +55,14 @@
 
 	& + & {
 		padding-left: 30px;
+	}
+
+	&-repeat {
+		width: 163px;
+	}
+
+	&-templates {
+		width: 87px;
 	}
 
 	&:hover {

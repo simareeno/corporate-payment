@@ -2,6 +2,7 @@
 	@mixin column-s 6;
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 0 60px;
 
 	@media (--desktopbig) {
 		@mixin column-big 6;
@@ -115,9 +116,11 @@
 		width: 44px;
 		height: 44px;
 		display: block;
-		background: $primary;
+		background-color: $primary;
 		border-radius: 100%;
 		margin-right: 16px;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	&__info {
@@ -148,6 +151,35 @@
 	}
 }
 
+.payment-single {
+	&.payment--budget {
+		.payment-single__icon {
+			background-color: #7b8690;
+			background-image: url(../images/icon_category_state__m__white.svg);
+		}
+	}
+
+	&.payment--person {
+		.payment-single__icon {
+			background-color: #f5be6c;
+			background-image: url(../images/icon_manager__m.svg);
+		}
+	}
+
+	&.payment--company {
+		.payment-single__icon {
+			background-color: #6b8eb2;
+			background-image: url(../images/icon_category_business__m__white.svg);
+		}
+	}
+}
+
+.desktop .payments-lists {
+	&--templates {
+		display: none;
+	}
+}
+
 .desktop .filters {
 	@mixin column-s 3;
 
@@ -160,6 +192,12 @@
 	background: color($primary a(06%));
 	padding: 18px;
 	border-radius: 12px;
+
+	.input-date {
+		.input-text {
+			width: 100%;
+		}
+	}
 }
 
 .desktop .input-date {

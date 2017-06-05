@@ -3,7 +3,6 @@ include parts/left.pug
 	.title #{title}
 	
 	.row.main-actions
-		.main-actions__title Создать
 		.main-action
 			a(href="")
 				img(src="images/icon_category_business__xl__white.svg").main-action__icon 
@@ -18,10 +17,16 @@ include parts/left.pug
 				.main-action__title В бюджет
 				
 	.row.payments
-		.nav-tabs.row__block11
-			.nav-tabs__tab.nav-tabs__tab--active Повторить платёж
-			.nav-tabs__tab Шаблоны
-		.payments-lists
+
+		.tabs
+			.tabs__tab.tab.tab--active.tab-repeat
+				a Повторить платёж
+			.tabs__tab.tab.tab-templates
+				a Шаблоны
+			.tabs__line
+			.tabs__current
+
+		.payments-lists.payments-lists--repeat
 			.payments-list
 				.payment-list__title.medium-up Вчера
 				a(href="").payment-single.payment--budget
@@ -60,13 +65,35 @@ include parts/left.pug
 						.payment-single__title АО «Ромашка»
 						.payment-single__number ··5673
 					.payment-single__sum 12 000
+		.payments-lists.payments-lists--templates
+			.payments-list
+				a(href="").payment-single.payment--budget
+					.payment-single__icon
+					.payment-single__info
+						.payment-single__title АО «Ромашка»
+						.payment-single__number ··5673
+					.payment-single__sum 12 000
+				a(href="").payment-single.payment--person
+					.payment-single__icon
+					.payment-single__info
+						.payment-single__title АО «Ромашка»
+						.payment-single__number ··5673
+					.payment-single__sum 12 000
+				a(href="").payment-single.payment--person
+					.payment-single__icon
+					.payment-single__info
+						.payment-single__title АО «Ромашка»
+						.payment-single__number ··5673
+					.payment-single__sum 12 000
 		.filters
 			.medium-up Фильтры
 			.filter
-				.semi-title С какого счёта
+				.semi-title Тип получателя
 				select.select
 					option(selected=true) Все
-					option Семья
+					option В компанию
+					option Физическому лицу
+					option В бюджет
 				.input.input-date
 					input(type="text").input-text
 					.input__desc Дата документа

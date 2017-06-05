@@ -369,6 +369,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+	width: 80%;
+	overflow: hidden;
+	text-overflow: ellipsis;
 
 	.number {
 		font-size: 17px;

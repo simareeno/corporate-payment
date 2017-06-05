@@ -1,9 +1,11 @@
 @import 'vars.css';
 
 header {
-	background: $primary;
+	background-color: #40444b;
 	color: white;
 	padding: 16px 0;
+	background-image: url(../images/bg.png);
+	background-size: cover;
 
 	.wrapper {
 		display: flex;
@@ -12,7 +14,7 @@ header {
 
 		@media (--mobile) {
 			display: block;
-			margin: 0 0 0 12px;
+			margin: 0 12px;
 		}
 	}
 }
@@ -35,8 +37,8 @@ header {
 		margin-right: 10px;
 
 		&-menu {
-			color: fade(white, 60%);
-			box-shadow: 0 1px 0 fade(white, 60%);
+			color: color(white a(60%));
+			box-shadow: 0 1px 0 color(white a(60%));
 			margin-left: -2px;
 		}
 
@@ -112,6 +114,7 @@ header {
 .mobile {
 	.header {
 		position: relative;
+		padding: 16px 0 40px;
 
 		.row {
 			flex-wrap: wrap;
@@ -127,7 +130,6 @@ header {
 			right: 0;
 			bottom: 0;
 			z-index: 1;
-			opacity: .1;
 			background-size: cover;
 		}
 
@@ -144,7 +146,6 @@ header {
 		.row {
 			position: relative;
 			z-index: 5;
-			margin-left: 36px;
 			margin-bottom: 10px;
 
 			&__block {
@@ -153,7 +154,7 @@ header {
 
 			&__credit {
 				margin-bottom: 12px;
-				border-bottom: 1px solid fade(white, 10%);
+				border-bottom: 1px solid color(white a(10%));
 				padding-bottom: 12px;
 			}
 
@@ -186,6 +187,76 @@ header {
 				width: 100%;
 				max-width: initial;
 			}
+		}
+	}
+
+	.top-bar {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.myself {
+		box-shadow: 0 0 0 1px white;
+		border-radius: 100%;
+		width: 28px;
+		height: 28px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.main-actions {
+		&__list {
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			align-items: flex-start;
+			width: 100%;
+		}
+
+		&__title {
+			position: relative;
+			color: color(white a(60%));
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 24px 0;
+			font-weight: 400;
+
+			&:before, &:after {
+				content: '';
+				width: 100%;
+				display: inline-block;
+				height: 1px;
+				background: color(white a(8%));
+			}
+
+			&:before {
+				margin-right: 10px;
+			}
+
+			&:after {
+				margin-left: 10px;
+			}
+		}
+	}
+
+	.main-action {
+		text-align: center;
+		width: 33%;
+
+		a {
+			display: block;
+		}
+
+		&__title {
+			color: color(white a(60%));
+			font-size: 12px;
+			margin-top: 7px;
+			line-height: 15px;
 		}
 	}
 }

@@ -39,5 +39,8 @@
     "run-sequence": "^1.2.2",
     "selectize": "^0.12.4",
     "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "jquery-touchswipe": "^1.6.15"
   }
 }

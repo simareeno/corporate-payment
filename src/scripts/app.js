@@ -1,6 +1,7 @@
 /* global selectize:true, inputMask:true, device:true, $:true */
 
 $ = require("jquery");
+var touchSwipe = require("jquery-touchswipe");
 selectize = require("selectize");
 inputMask = require("jquery-mask-plugin");
 var FastClick = require("fastclick");
@@ -17,5 +18,6 @@ $(document).ready(function() {
 	require("./logic.js");
 	// require("./input-masks.js");
 	// require("./realData.js");
-	require('./select.js');
+	require("./select.js");
+	require("./content-initial.js");
 });

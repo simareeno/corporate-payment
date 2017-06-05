@@ -1,0 +1,59 @@
+$primary: #0b1f35;
+
+$secondary: fade($primary, 50%);
+
+$gray: fade($primary, 30%);
+
+$background: fade($primary, 5%);
+
+$brandred: #f03226;
+
+$uired: fade($brandRed, 90%);
+
+$uigreen: #5fa50d;
+
+$linkcolor: #233549;
+
+$alfablue: #243552;
+
+$alfared: #ef3124;
+
+$animatein: 0.05s ease-in-out;
+
+$animateout: 0.2s ease-in-out;
+
+@custom-media --mobile (max-width: 1024px);
+@custom-media --desktop (min-width: 1024px);
+@custom-media --desktopbig (min-width: 1280px);
+
+/* S E T K A */
+
+$column-s: 48px;
+
+$gutter-s: 12px;
+
+$sidemargin-s: 30px;
+
+$column-big: 60px;
+
+$gutter-big: 20px;
+
+$sidemargin-big: 60px;
+
+$sidebarwidth: 250px;
+
+/* Column mixins */
+
+@define-mixin column-s $n {
+	$gutter: $gutter-s;
+
+	$column: $column-s;
+	width: calc(($column * $n) + ($gutter * $n - $gutter));
+}
+
+@define-mixin column-big $n {
+	$gutter: $gutter-big;
+
+	$column: $column-big;
+	width: calc(($column * $n) + ($gutter * $n - $gutter));
+}

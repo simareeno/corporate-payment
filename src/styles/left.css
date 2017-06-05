@@ -1,0 +1,96 @@
+.left {
+	width: $sidebarwidth;
+}
+
+.menu {
+	margin-top: 40px;
+
+	&__item {
+		position: relative;
+		font-size: 18px;
+		line-height: 24px;
+		color: $linkmenu;
+		transition: opacity $animateout;
+
+		&:before {
+			content: '';
+			width: 3px;
+			height: calc(~'100% - 12px');
+			display: block;
+			position: absolute;
+			left: -15px;
+			top: 6px;
+			background: fade($alfared, 0%);
+			border-radius: 3px;
+		}
+
+		a {
+			color: currentColor;
+			display: block;
+			padding: 7px 0;
+		}
+
+		&:hover {
+			opacity: .5;
+			transition: opacity $animatein;
+		}
+
+		&--active {
+			color: $alfared;
+			font-weight: bold;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&:before {
+				background: fade($alfared, 100%);
+			}
+		}
+	}
+}
+
+.menu__submenu {
+	padding: 15px 0;
+
+	&-item {
+		padding-left: 15px;
+		position: relative;
+
+		a {
+			color: currentColor;
+		}
+
+		&:hover {
+			opacity: .5;
+			transition: opacity $animatein;
+		}
+
+		& + & {
+			padding-top: 15px;
+		}
+
+		&--active {
+			a {
+				color: $alfared;
+				font-weight: bold;
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				background: #ef3124;
+				width: 3px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				border-radius: 5px;
+			}
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

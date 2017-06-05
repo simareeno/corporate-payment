@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="46px" viewBox="0 0 47 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_category_state__xxl__white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Actual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Payment-hub-00" transform="translate(-278.000000, -160.000000)">
+            <g id="row" transform="translate(15.000000, 145.000000)">
+                <g id="item" transform="translate(229.000000, 0.000000)">
+                    <g id="icon_category_state__xxl__white" transform="translate(34.000000, 12.000000)">
+                        <g id="ungroup">
+                            <rect id="Rectangle-path" x="0" y="0" width="48" height="48"></rect>
+                            <g id="a1" opacity="0.4"></g>
+                            <path d="M4,48 L0,48 L0,49 L47,49 L47,48 L43,48 L43,21 L33,21 L33,15 L14,15 L14,21 L4,21 L4,48 L4,48 Z M15,21 L32,21 L32,16 L15,16 L15,21 Z M5,48 L42,48 L42,22 L5,22 L5,48 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                            <rect id="Rectangle-path" fill="#FFFFFF" opacity="0.3" x="12" y="29" width="3" height="19"></rect>
+                            <rect id="Rectangle-path" fill="#FFFFFF" opacity="0.3" x="22" y="29" width="3" height="19"></rect>
+                            <rect id="Rectangle-path" fill="#FFFFFF" opacity="0.3" x="32" y="29" width="3" height="19"></rect>
+                            <polygon id="Combined-Shape" fill="#FFFFFF" opacity="0.3" points="24 3 23 3 23 15 24 15 24 8 33 9 33 4"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_manager__m</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Actual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Payment-hub-00" transform="translate(-23.000000, -520.000000)">
+            <g id="history" transform="translate(0.000000, 257.000000)">
+                <g id="row-/-black-/-xl-/-no_label_service_icon" transform="translate(0.000000, 234.000000)">
+                    <g id="icon_manager__m" transform="translate(22.000000, 29.000000)">
+                        <g id="ungroup">
+                            <rect id="Rectangle-path" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M12,15 C8.2,15 6,10.7 6,6.5 C6,3.5 6.7,0 12,0 C17.3,0 18,3.5 18,6.5 C18,10.7 15.8,15 12,15 L12,15 Z M12,1 C8.4,1 7,2.6 7,6.5 C7,9.6 8.6,14 12,14 C15.4,14 17,9.6 17,6.5 C17,2.6 15.6,1 12,1 L12,1 Z" id="Shape" fill="#FFFFFF"></path>
+                            <path d="M11.4354365,19.7148871 C10.8947319,19.3264313 10.5,18.4664463 10.5,17.9134465 C10.5,17.1808244 11.1843324,17 11.9915254,17 C12.7987184,17 13.5,17.1808244 13.5,17.9134465 C13.5,18.4612199 13.112694,19.3102034 12.5798546,19.7037476 C13.2798367,20.5874964 14,22.7444097 14,23.9734834 C13.0227278,23.9734834 11.4715433,23.9734834 10,23.9734834 C10,22.749543 10.7308305,20.6054971 11.4354365,19.7148871 Z" id="Combined-Shape" fill="#FFFFFF" opacity="0.300000012"></path>
+                            <path d="M1,23 C1,19.3 4.7,17.9 6.2,17.1 C8.2,16.1 8.5,15.7 8.5,13.3 L9.5,13.3 C9.5,16.1 9,16.8 6.6,18 C5.3,18.7 2,19.9 2,23 L1,23 Z" id="Shape" fill="#FFFFFF"></path>
+                            <path d="M22,23 C22,19.9 18.7,18.7 17.3,18 C14.9,16.8 14.4,16 14.4,13.3 L15.4,13.3 C15.4,15.8 15.8,16.2 17.7,17.1 C19.3,17.9 23,19.3 23,23 L22,23 Z" id="Shape" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_star</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Actual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Payment-hub-00" transform="translate(-339.000000, -301.000000)">
+            <g id="history" transform="translate(0.000000, 257.000000)">
+                <g id="Group" transform="translate(0.000000, 32.000000)">
+                    <g id="ico_star" transform="translate(339.000000, 11.000000)">
+                        <rect id="ph" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M18.3893575,21.7941962 L17.1690988,14.679542 L22.3381976,9.64091597 L15.1946788,8.60290192 L12,2.12977573 L8.80532124,8.60290192 L1.66180238,9.64091597 L6.83090119,14.679542 L5.61064249,21.7941962 L12,18.4351121 L18.3893575,21.7941962 Z" id="Star-3" stroke="#0B1F35"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

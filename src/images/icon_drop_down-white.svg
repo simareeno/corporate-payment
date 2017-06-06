@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="6px" viewBox="0 0 13 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_drop_down-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Actual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="new-payment-empty" transform="translate(-345.000000, -202.000000)">
+            <g id="bill" transform="translate(12.000000, 183.000000)">
+                <g id="icon_drop_down-white" transform="translate(327.000000, 10.000000)">
+                    <rect id="Rectangle-path" x="0" y="0" width="24" height="24"></rect>
+                    <polygon id="Shape" stroke="#FFFFFF" points="12.5002534 14.26609 7.35827153 9 7 9.36695502 12.5002534 15 18 9.36695502 17.6417285 9"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

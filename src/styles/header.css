@@ -116,6 +116,10 @@ header {
 		position: relative;
 		padding: 16px 0 40px;
 
+		&-payment {
+			padding: 16px 0 4px;
+		}
+
 		.row {
 			flex-wrap: wrap;
 		}
@@ -161,10 +165,7 @@ header {
 			.number {
 				color: white;
 				margin-bottom: 4px;
-
-				&__card {
-					background-image: url(../images/credit-card-white.png);
-				}
+				width: 100%;
 			}
 
 			.info {
@@ -188,6 +189,36 @@ header {
 				max-width: initial;
 			}
 		}
+	}
+
+	.current-schet, .current-payment {
+		position: relative;
+		margin-top: 30px;
+	}
+
+	.current-payment {
+		&__title {
+			font-weight: bold;
+			font-size: 17px;
+		}
+
+		&__number {
+			font-size: 17px;
+			border-bottom: 1px dashed color(white a(50%));
+			line-height: 19px;
+			margin: 0 0 3px 8px;
+		}
+
+		&__more {
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	.icon--dropdown {
+		position: absolute;
+		right: 0;
+		top: 6px;
 	}
 
 	.top-bar {
@@ -258,5 +289,10 @@ header {
 			margin-top: 7px;
 			line-height: 15px;
 		}
+	}
+
+	.number {
+		color: white;
+		margin-bottom: 4px;
 	}
 }

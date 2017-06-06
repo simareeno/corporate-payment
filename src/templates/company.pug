@@ -1,0 +1,11 @@
+- var title = 'Рублёвый платёж'
+
+include parts/head.pug
+body.initial
+	.desktop
+		include desktop/header.pug
+	.mobile
+		include mobile/header-payment.pug
+		.wrapper
+			include mobile/content-company.pug
+include desktop/footer.pug

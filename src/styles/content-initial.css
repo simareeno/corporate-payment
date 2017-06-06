@@ -94,6 +94,10 @@
 		margin-right: $gutter-s;
 		margin-bottom: 20px;
 
+		&__title-day {
+			color: color($primary a(60%));
+		}
+
 		@media (--desktopbig) {
 			@mixin column-big 6;
 			margin-right: $gutter-big;
@@ -194,10 +198,13 @@
 		&__favorites {
 			background: url(../images/ico_star.svg);
 			width: 23px;
+			padding: 24px;
+			background-position: center;
+			background-repeat: no-repeat;
 			height: 21px;
 			position: absolute;
-			top: 12px;
-			right: 12px;
+			top: 0;
+			right: 0;
 		}
 
 		&__title {
@@ -214,7 +221,7 @@
 		z-index: 5;
 		width: 100%;
 		overflow: hidden;
-		transition: transform .2s ease-in-out;
+		transition: transform 650ms cubic-bezier(.28, 1.11, .46, 1.04);
 	}
 
 	.repeat {
@@ -223,7 +230,7 @@
 		z-index: 1;
 	}
 
-	.payment-list {
+	.payments-list {
 		&__title {
 			background: color($primary a(06%));
 			position: relative;

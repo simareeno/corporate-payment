@@ -21,10 +21,9 @@ $(".tab-repeat").click(function () {
 
 let templates = document.querySelector(".mobile .templates");
 let mobile = document.querySelector(".mobile");
-let screenHeight = $(window).height();
 
 function showTemplates() {
-	templates.style.transform = "translateY(" + 54 + "px)";
+	templates.style.transform = "translateY(" + 60 + "px)";
 	templates.style.visibility = "visible";
 	templates.style.height = "100%";
 	templates.style.padding = "12px";
@@ -32,14 +31,14 @@ function showTemplates() {
 }
 
 function hideTemplates() {
-	templates.style.transform = "translateY(" + (screenHeight - 54) + "px)";
+	templates.style.transform = "translateY(" + screenHeight + "px)";
 	setTimeout(function () {
 		templates.style.visibility = "hidden";
 		templates.style.height = "0";
 		templates.style.padding = "0";
 		mobile.style.position = "relative";
 	}
-	, 200);
+	, 650);
 }
 
 hideTemplates();
@@ -48,12 +47,7 @@ $(".row__favorites").click(function () {
 	showTemplates();
 });
 
-$(".avatar").click(function (e) {
-	e.preventDefault();
-	hideTemplates();
-});
-
-$(".header").click(function (e) {
+$(".templates").click(function (e) {
 	e.preventDefault();
 	hideTemplates();
 });

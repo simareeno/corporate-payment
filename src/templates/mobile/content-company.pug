@@ -1,0 +1,92 @@
+.form
+	.form-group
+		.form-group__title.medium-up Получатель
+		.form-group__item.input.input-receiver 
+			input(type="text").input-text
+			.input__desc Наименование получателя
+		.form-group__item.input.input-inn
+			input(type="text").input-text
+			.input__desc ИНН
+		.form-group__item.input.input-kpp
+			input(type="text").input-text
+			.input__desc КПП
+		.form-group__item.input.input-account
+			input(type="text").input-text
+			.input__desc Счёт
+		.form-group__item.input.input-bik
+			input(type="text").input-text
+			.input__desc БИК
+
+	.form-group
+		.form-group__title.medium-up Реквизиты платежа
+		.form-group__item.input.input-receiver 
+			input(type="text").input-text
+			.input__desc Сумма платежа
+		.form-group__item.input.input-inn
+			input(type="text").input-text
+			.input__desc Назначение платежа
+		.form-group__item.form-group__item--select
+			.semi-title НДС
+			select.select
+				option(selected=true) Не облагается
+				option Облагается
+		.form-group__item.form-group__item--radio
+			.semi-title Срочность платежа
+			.radio
+				input(for="promptness-standard-mobile" checked="true" type="radio" name="promptness-mobile").radio__input#promptness-standard-mobile
+				label(for="promptness-standard-mobile").radio__label Стандартно
+			.radio
+				input(for="promptness-today-mobile" type="radio" name="promptness-mobile").radio__input#promptness-today-mobile
+				label(for="promptness-today-mobile").radio__label Сегодня
+			.radio
+				input(for="promptness-hurry-mobile" type="radio" name="promptness-mobile").radio__input#promptness-hurry-mobile
+				label(for="promptness-hurry-mobile").radio__label Срочно
+		.form-group__item.form-group__item--select
+			.semi-title Очерёдность платежа
+			select.select
+				option 1
+				option 2
+				option 3
+				option 4
+				option(selected=true) 5
+				
+	.folder
+		.folder__top
+			.folder__icon.icon.icon24.icon--add
+			.folder__title Дополнительные параметры
+			.folder__arrow.icon.icon24.icon--dropdown-black
+		.folder__content
+			.form-group
+				.form-group__item.input.input-date
+					input(type="text").input-text
+					.input__desc Дата документа
+				.form-group__item.input.input-inn
+					input(type="text").input-text
+					.input__desc Код
+				.form-group__item.input.input-date
+					input(type="text").input-text
+					.input__desc Отправить не ранее
+					
+	.folder
+		.folder__top
+			.folder__icon.icon.icon24.icon--notification
+			.folder__title Уведомления
+			.folder__arrow.icon.icon24.icon--dropdown-black
+		.folder__content
+			.form-group
+				.form-group__item.input.input-date
+					input(type="text").input-text
+					.input__desc Дата документа
+				.form-group__item.input.input-inn
+					input(type="text").input-text
+					.input__desc Код
+				.form-group__item.input.input-date
+					input(type="text").input-text
+					.input__desc Отправить не ранее
+	
+	.fast-action
+		.button.button-submit Отправить в банк
+	
+	.button.button-submit Отправить в банк
+	.button.button-submit.button--grey Подписать платёж
+	.button.button-submit.button--transparent Сохранить

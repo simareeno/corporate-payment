@@ -1,0 +1,78 @@
+.mobile {
+	.form-group {
+		margin: 24px 0;
+
+		&:first-child {
+			margin-top: 12px;
+		}
+
+		&__title {
+			background: color($primary a(06%));
+			position: relative;
+			left: -12px;
+			width: calc(100% + 24px);
+			padding: 18px 12px 9px;
+		}
+
+		&__item {
+			margin-top: 44px;
+
+			&--select, &--radio {
+				margin-top: 30px;
+			}
+		}
+
+		.input input {
+			width: 100%;
+		}
+	}
+
+	.form {
+		.button {
+			margin-top: 30px;
+
+			& + & {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.folder {
+		margin: 40px 0;
+
+		&__top {
+			display: flex;
+			align-items: center;
+		}
+
+		&__title {
+			flex-grow: 1;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			font-size: 11px;
+		}
+
+		&__icon {
+			margin-right: 12px;
+		}
+
+		&__content {
+			visibility: hidden;
+			overflow: hidden;
+			height: 0;
+		}
+
+		&--active & {
+			&__arrow {
+				transform: rotate(180deg);
+			}
+
+			&__content {
+				visibility: visible;
+				overflow: initial;
+				height: initial;
+			}
+		}
+	}
+}

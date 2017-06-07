@@ -221,7 +221,7 @@
 		z-index: 5;
 		width: 100%;
 		overflow: hidden;
-		transition: transform 650ms cubic-bezier(.28, 1.11, .46, 1.04);
+		transition: transform $animatecool;
 	}
 
 	.repeat {

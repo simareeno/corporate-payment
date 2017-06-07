@@ -1,4 +1,4 @@
-/* global selectize:true, inputMask:true, device:true, $:true */
+/* global screenHeight:true selectize:true, inputMask:true, device:true, $:true */
 
 $ = require("jquery");
 selectize = require("selectize");
@@ -18,7 +18,7 @@ screenHeight = $(window).height();
 $(document).ready(function() {
 	require("./logic.js");
 	// require("./input-masks.js");
-	// require("./realData.js");
+	require("./realData.js");
 	require("./select.js");
 	require("./form.js");
 	require("./content-initial.js");

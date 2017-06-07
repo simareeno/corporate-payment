@@ -3,14 +3,18 @@ $(".folder__top").click(function () {
 	folder.toggleClass("folder--active");
 });
 
-let fastAction = $(".mobile .fast-action");
+$('.info__content').hide();
 
-function showFastAction() {
-	fastAction.addClass("fast-action--active");
-}
-
-function hideFastAction() {
-	fastAction.removeClass("fast-action--active");
-}
-
-showFastAction();
+$(".info").click(function () {
+	let info = $(this);
+	let content = $(this).find(".info__content");
+	if (info.hasClass("info--active")) {
+		info.removeClass("info--active");
+		setTimeout(function () {
+			content.hide();
+		}, 200);
+	} else {
+		content.show();
+		info.addClass("info--active");
+	}
+});

@@ -22,6 +22,8 @@ $animatein: 0.05s ease-in-out;
 
 $animateout: 0.2s ease-in-out;
 
+$animatecool: 0.65s cubic-bezier(0.28, 1.11, 0.46, 1.04);
+
 @custom-media --mobile (max-width: 1024px);
 @custom-media --desktop (min-width: 1024px);
 @custom-media --desktopbig (min-width: 1280px);

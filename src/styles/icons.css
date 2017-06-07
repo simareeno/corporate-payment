@@ -1,0 +1,33 @@
+.icon {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon24 {
+	width: 24px;
+	height: 24px;
+}
+
+.icon--dropdown {
+	background-image: url(../images/icon_drop_down-white.svg);
+}
+
+.icon--dropdown-black {
+	background-image: url(../images/icon_expand_down__m__white.svg);
+}
+
+.icon--more {
+	background-image: url(../images/ico_action_more_android__m__white.svg);
+}
+
+.icon--add {
+	background-image: url(../images/icon_add__m.svg);
+}
+
+.icon--notification {
+	background-image: url(../images/icon_tool_notifications__m__white.svg);
+}
+
+.icon--info {
+	background-image: url(../images/icon_tool_info__m__white.svg);
+}

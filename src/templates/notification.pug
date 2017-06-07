@@ -1,0 +1,12 @@
+- var title = 'Новый платёж'
+
+include parts/head.pug
+body.initial
+	.desktop
+		include desktop/header.pug
+		.wrapper
+			include desktop/content-initial.pug
+	.mobile
+		include mobile/header-main.pug
+		include mobile/content-initial.pug
+include desktop/footer.pug

@@ -37,6 +37,27 @@
 		}
 	}
 
+	.fast-action {
+		position: fixed;
+		padding: 12px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		background: white;
+		transition: transform $animatecool;
+		box-shadow: 0 0 40px 0 rgba(11, 31, 53, .16);
+		transform: translate(0, 100px);
+
+		.button {
+			margin: 0;
+		}
+
+		&--active {
+			transform: translate(0, 0);
+		}
+	}
+
 	.folder {
 		margin: 40px 0;
 

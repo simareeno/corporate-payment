@@ -130,38 +130,38 @@ a {
 	.semi-title {
 		width: 100%;
 	}
+}
 
-	.button {
-		@mixin column-s 6;
-		padding: 17px 0;
-		font-weight: bold;
-		font-size: 16px;
-		transition: background $animateout, opacity .2s ease-in-out;
+.button {
+	@mixin column-s 6;
+	padding: 17px 0;
+	font-weight: bold;
+	font-size: 16px;
+	transition: background $animateout, opacity .2s ease-in-out;
 
-		@media (--desktopbig) {
-			@mixin column-big 6;
-		}
+	@media (--desktopbig) {
+		@mixin column-big 6;
+	}
 
-		@media (--mobile) {
-			width: 100%;
-		}
+	@media (--mobile) {
+		width: 100%;
+	}
+
+	&:hover {
+		background-color: darken($alfared, 10%);
+		transition: background $animatein;
+	}
+
+	&:active {
+		background-color: darken($alfared, 20%);
+	}
+
+	&--disabled {
+		opacity: .2;
 
 		&:hover {
-			background-color: darken($alfared, 10%);
-			transition: background $animatein;
-		}
-
-		&:active {
-			background-color: darken($alfared, 20%);
-		}
-
-		&--disabled, &--disable {
 			opacity: .2;
-
-			&:hover {
-				opacity: .2;
-				background: $alfared;
-			}
+			background: $alfared;
 		}
 	}
 }
@@ -330,32 +330,46 @@ a {
 	opacity: .6;
 }
 
-.icon {
-	background-repeat: no-repeat;
-	background-position: center;
-}
+.info {
+	margin: 12px 0;
 
-.icon24 {
-	width: 24px;
-	height: 24px;
-}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
 
-.icon--dropdown {
-	background-image: url(../images/icon_drop_down-white.svg);
-}
+	&__title {
+		font-size: 13px;
+		margin-left: 6px;
+		color: color($primary a(60%));
+	}
 
-.icon--dropdown-black {
-	background-image: url(../images/icon_expand_down__m__white.svg);
-}
+	&__content {
+		visibility: hidden;
+		transform: scale(.95) translate(0, -10px);
+		opacity: 0;
+		margin-top: 6px;
+		transform-origin: top left;
+		transition:
+			transform $animateout,
+			opacity $animateout,
+			visibility .5s .5s,
+			height .0s .0s;
+		background: color($primary a(6%));
+		font-size: 13px;
+		line-height: 16px;
+		color: color($primary a(60%));
+		padding: 12px;
+	}
 
-.icon--more {
-	background-image: url(../images/ico_action_more_android__m__white.svg);
-}
-
-.icon--add {
-	background-image: url(../images/icon_add__m.svg);
-}
-
-.icon--notification {
-	background-image: url(../images/icon_tool_notifications__m__white.svg);
+	&--active & {
+		&__content {
+			transform: scale(1);
+			visibility: visible;
+			opacity: 1;
+			transition:
+				transform $animateout,
+				opacity $animateout;
+		}
+	}
 }

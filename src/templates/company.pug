@@ -1,11 +1,13 @@
 - var title = 'Рублёвый платёж'
 
 include parts/head.pug
-body.initial
+body.company
 	.desktop
 		include desktop/header.pug
+		include desktop/sms-popup.pug
 	.mobile
 		include mobile/header-payment.pug
 		.wrapper
 			include mobile/content-company.pug
+		include mobile/sms-popup.pug
 include desktop/footer.pug

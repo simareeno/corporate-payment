@@ -26,10 +26,10 @@
 			input(type="text").input-text
 			.input__desc Назначение платежа
 		.form-group__item.form-group__item--select
-			.semi-title НДС
-			select.select.select-common
+			select.select
 				option(selected=true) Не облагается
 				option Облагается
+			label.select-desc.select-desc--active НДС
 		.form-group__item.form-group__item--radio
 			.semi-title Срочность платежа
 			.radio
@@ -42,13 +42,13 @@
 				input(for="promptness-hurry-mobile" type="radio" name="promptness-mobile").radio__input#promptness-hurry-mobile
 				label(for="promptness-hurry-mobile").radio__label Срочно
 		.form-group__item.form-group__item--select
-			.semi-title Очерёдность платежа
 			select.select.select-common
 				option 1
 				option 2
 				option 3
 				option 4
 				option(selected=true) 5
+			label.select-desc.select-desc--active Очерёдность платежа
 			.info
 				.info__wrapper
 					.info__icon.icon.icon24.icon--info
@@ -62,15 +62,28 @@
 			.folder__arrow.icon.icon24.icon--dropdown-black
 		.folder__content
 			.form-group
-				.form-group__item.input.input-date
-					input(type="text").input-text
-					.input__desc Дата документа
+				.form-group__title.medium-up Бюджетная информация
+				.form-group__item.form-group__item--select
+					input.select.select-status(type="text")
+					label.select-desc Статус плательщика — 101
 				.form-group__item.input
 					input(type="text").input-text
-					.input__desc Код
+					.input__desc КБК — 104
+				.form-group__item.input
+					input(type="text").input-text
+					.input__desc ОКТМО — 105
+				.form-group__item.form-group__item--select
+					input.select.select-status(type="text")
+					label.select-desc Основание платежа — 106
 				.form-group__item.input.input-date
 					input(type="text").input-text
-					.input__desc Отправить не ранее
+					.input__desc Налоговый период — 107
+				.form-group__item.input
+					input(type="text").input-text
+					.input__desc Номер документа — 108
+				.form-group__item.input.input-date
+					input(type="text").input-text
+					.input__desc Дата налогового документа — 109
 					
 	.folder
 		.folder__top

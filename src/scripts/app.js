@@ -3,6 +3,7 @@
 $ = require("jquery");
 selectize = require("selectize");
 inputMask = require("jquery-mask-plugin");
+Hammer = require("hammerjs");
 let FastClick = require("fastclick");
 
 FastClick.attach(document.body);

@@ -1,3 +1,5 @@
+
+
 // TABS
 
 $(".tab-templates").click(function () {
@@ -41,13 +43,24 @@ function hideTemplates() {
 	, 650);
 }
 
-hideTemplates();
+function swipeOnTemplates() {
+	let hammertime = new Hammer(templates);
+	hammertime.get("swipe").set({ direction: Hammer.DIRECTION_ALL });
+	hammertime.on("swipedown", function() {
+		hideTemplates();
+	});
+}
+
+templates && hideTemplates();
+templates && swipeOnTemplates();
 
 $(".row__favorites").click(function () {
 	showTemplates();
 });
 
-$(".templates").click(function (e) {
-	e.preventDefault();
-	hideTemplates();
-});
+
+
+// $(".templates").click(function (e) {
+// 	e.preventDefault();
+// 	hideTemplates();
+// });

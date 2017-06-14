@@ -138,6 +138,7 @@ header {
 		}
 
 		.avatar {
+			width: initial;
 			position: relative;
 			z-index: 5;
 		}
@@ -227,13 +228,30 @@ header {
 	}
 
 	.myself {
-		box-shadow: 0 0 0 1px white;
-		border-radius: 100%;
-		width: 28px;
-		height: 28px;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+
+		&__name {
+			font-size: 18px;
+			border-bottom: 1px dashed color(white a(50%));
+		}
+
+		&__notifications, &__messages {
+			margin-right: 12px;
+			background-size: cover;
+		}
+
+		&__notifications {
+			background-image: url(../images/icon_tool_notifications__m__white.png);
+			width: 24px;
+			height: 24px;
+		}
+
+		&__messages {
+			background-image: url(../images/icon_tool_chat__m__white.png);
+			width: 24px;
+			height: 24px;
+		}
 	}
 
 	.main-actions {

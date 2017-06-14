@@ -148,7 +148,7 @@ a {
 	}
 
 	&:hover {
-		background-color: darken($alfared, 10%);
+		background-color: color($alfared shade(10%));
 		transition: background $animatein;
 	}
 
@@ -194,11 +194,19 @@ a {
 	&--grey {
 		background: color($primary a(5%));
 		color: $primary;
+
+		&:hover {
+			background: color($primary a(20%));
+		}
 	}
 
 	&--transparent {
 		background: transparent;
 		color: $primary;
+
+		&:hover {
+			background: color($primary a(20%));
+		}
 	}
 
 	@media (--desktop) {

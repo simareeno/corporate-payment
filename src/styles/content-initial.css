@@ -277,6 +277,7 @@
 			flex-direction: column;
 			justify-content: space-between;
 			flex-grow: 1;
+			height: 44px;
 		}
 
 		&__title {
@@ -318,7 +319,7 @@
 	&.payment--company {
 		.payment-single__icon {
 			background-color: #6b8eb2;
-			background-image: url(../images/icon_category_business__m__white.svg);
+			background-image: url(../images/icon_category_business__m__black.svg);
 		}
 	}
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="24px" viewBox="0 0 23 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_category_business__m__black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Actual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280-Payment-hub" transform="translate(-333.000000, -660.000000)">
+            <g id="row-/-black-/-xl-/-no_label_service_icon" transform="translate(310.000000, 631.000000)">
+                <g id="icon_category_business__m__black" transform="translate(22.002597, 29.000000)">
+                    <g id="ungroup">
+                        <rect id="Rectangle-path" x="0" y="0" width="24.002833" height="24"></rect>
+                        <g id="a1" opacity="0.4"></g>
+                        <path d="M1.50017706,23.065 L14.5017116,23.065 L22.5026559,23.065 C22.7786885,23.065 23.0027149,22.841 23.0027149,22.565 L23.0027149,11.5 C23.0027149,11.224 22.7786885,11 22.5026559,11 L15.0017706,11 L15.0017706,1 C15.0017706,0.832 14.9177607,0.675 14.7767441,0.583 C14.6357274,0.491 14.4587065,0.474 14.3046883,0.541 L1.30315381,6.106 C1.11913209,6.185 1.00011804,6.365 1.00011804,6.565 L1.00011804,22.565 C1.00011804,22.842 1.22414448,23.065 1.50017706,23.065 L1.50017706,23.065 Z M15.0017706,12 L22.0025969,12 L22.0025969,22.065 L15.0017706,22.065 L15.0017706,12 L15.0017706,12 Z M2.00023608,6.895 L14.0016526,1.758 L14.0016526,11.5 L14.0016526,22.065 L2.00023608,22.065 L2.00023608,6.895 L2.00023608,6.895 Z" id="Shape" fill="#FFFFFF"></path>
+                        <path d="M17.5020657,12 C17.7780983,12 18.0021247,11.776 18.0021247,11.5 L18.0021247,8 C18.0021247,7.724 17.7780983,7.5 17.5020657,7.5 C17.2260331,7.5 17.0020067,7.724 17.0020067,8 L17.0020067,11.5 C17.0020067,11.776 17.2260331,12 17.5020657,12 L17.5020657,12 Z" id="Shape" fill="#FFFFFF" opacity="0.3"></path>
+                        <rect id="Rectangle-path" fill="#FFFFFF" opacity="0.3" x="5.00059021" y="9" width="2.00023608" height="3"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" opacity="0.3" x="9.00106237" y="7" width="2.00023608" height="3"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" opacity="0.3" x="17.0020067" y="14" width="2.00023608" height="3"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" opacity="0.3" x="5.00059021" y="14" width="2.00023608" height="3"></rect>
+                        <path d="M19.5023018,9.5 C19.2262692,9.5 19.0022428,9.724 19.0022428,10 L19.0022428,11.5 C19.0022428,11.776 19.2262692,12 19.5023018,12 C19.7783344,12 20.0023608,11.776 20.0023608,11.5 L20.0023608,10 C20.0023608,9.724 19.7783344,9.5 19.5023018,9.5 L19.5023018,9.5 Z" id="Shape" fill="#FFFFFF" opacity="0.3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

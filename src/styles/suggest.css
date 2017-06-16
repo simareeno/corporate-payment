@@ -1,0 +1,99 @@
+.suggest-top {
+	position: fixed;
+	height: 44px;
+
+	&__close {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 44px;
+		height: 44px;
+		background-image: url(../images/icon__tool_close__m__white.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.suggest {
+	visibility: hidden;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 0;
+	padding: 0;
+	z-index: 5;
+	width: 100%;
+	overflow: hidden;
+	transition: transform $animateout;
+}
+
+.suggest-single {
+	position: relative;
+	display: flex;
+	padding: 12px 0;
+	color: color($primary a(60%));
+	font-weight: 400;
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+		display: block;
+		margin-right: 16px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background: white;
+		background-size: cover;
+	}
+
+	&__info {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-grow: 1;
+		position: relative;
+	}
+
+	&__title {
+		font-size: 17px;
+		width: 100%;
+	}
+
+	&__number {
+		margin-top: 10px;
+		font-size: 13px;
+	}
+
+	&__sum {
+		font-size: 13px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		&:after {
+			content: ' ₽';
+		}
+	}
+}
+
+
+.suggest-single {
+	&.suggest--company {
+		.suggest-single__icon {
+			background-image: url(../images/icon_category_business__m__white.svg);
+		}
+	}
+
+	&.suggest--person {
+		.suggest-single__icon {
+			background-image: url(../images/icon_tool_payment_to_self__m__white.svg);
+		}
+	}
+
+	&.suggest--recent {
+		.suggest-single__icon {
+			background-image: url(../images/icon_tool_history__m__white.svg);
+		}
+	}
+}

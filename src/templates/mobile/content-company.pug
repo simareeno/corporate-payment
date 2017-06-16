@@ -5,22 +5,22 @@
 			input(type="text").input-text
 			.input__desc Наименование получателя
 		.form-group__item.input.input-inn
-			input(type="text").input-text
+			input(type="number",pattern="[0-9]*",inputmode="numeric").input-text
 			.input__desc ИНН
 		.form-group__item.input.input-kpp
-			input(type="text").input-text
+			input(type="number",pattern="[0-9]*",inputmode="numeric").input-text
 			.input__desc КПП
 		.form-group__item.input.input-account
-			input(type="text").input-text
+			input(type="number",pattern="[0-9]*",inputmode="numeric").input-text
 			.input__desc Счёт
 		.form-group__item.input.input-bik
-			input(type="text").input-text
+			input(type="number",pattern="[0-9]*",inputmode="numeric").input-text
 			.input__desc БИК
 
 	.form-group
 		.form-group__title.medium-up Реквизиты платежа
 		.form-group__item.input.input-sum
-			input(type="text").input-text
+			input(type="number",pattern="[0-9]*",inputmode="numeric").input-text
 			.input__desc Сумма платежа
 		.form-group__item.input.input-towhom
 			input(type="text").input-text
@@ -94,3 +94,29 @@
 	.button.button-submit.button--disabled Отправить в банк
 	.button.button-submit.button--grey.button--disabled Подписать платёж
 	.button.button-submit.button--transparent Сохранить
+
+.suggest.suggest-top
+	.suggest-top__close
+		
+.suggest.suggest-bottom
+	.suggest-list
+		.suggest-single.suggest--company
+			.suggest-single__icon
+			.suggest-single__info
+				.suggest-single__title Вася Петров
+				.suggest-single__number ··2133
+		.suggest-single.suggest--recent
+			.suggest-single__icon
+			.suggest-single__info
+				.suggest-single__title Петя Васин
+				.suggest-single__number ··9613
+		.suggest-single.suggest--recent
+			.suggest-single__icon
+			.suggest-single__info
+				.suggest-single__title Маша Ермолаева
+				.suggest-single__number ··5673
+		.suggest-single.suggest--recent
+			.suggest-single__icon
+			.suggest-single__info
+				.suggest-single__title Маша Ермолаева
+				.suggest-single__number ··5673
